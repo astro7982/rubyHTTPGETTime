@@ -1,4 +1,4 @@
-This Ruby script will repeat an HTTP GET request to the `base_url` for the amount set on the `repeatget` variable.
+This Ruby script will repeat an HTTP GET request to the `base_url` based the amount set on the `repeatget` variable.
 
 The current `base_url` will execute an HTTP GET to http://worldtimeapi.org/api/timezone/America/New_York resulting in the following output. 
 
