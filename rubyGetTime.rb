@@ -6,16 +6,17 @@ require 'httpx'
 base_url = 'http://worldtimeapi.org/api/timezone/America/New_York'
 response = HTTPX.get(base_url)
 x = 0
+# Amount of HTTP GET request to the base_url.
+repeatget = 500000
 
-# until x >= 500000 means it will get the base_url 50000 times.
-until x >= 500000
+until x >= repeatget
   if response.status == 200
     response2 = HTTPX.get(base_url)
     puts response2.body
     puts ''
-    puts 'E.T. Phone Home! - HTTP GET is Working!'
+    puts 'HTTP GET is Working!'
   else
-    puts 'E.T. is lost! - HTTP GET is Failing!'
+    puts 'HTTP GET is Failing! - Please check base_url'
   end
   x += 1
   sleep 1
