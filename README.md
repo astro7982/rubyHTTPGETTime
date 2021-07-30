@@ -1,4 +1,4 @@
-### Ruby HTTP GET Script
+## Ruby HTTP GET Script
 
 This Ruby script will repeat an HTTP GET request to the `base_url` based the amount set on the `repeatget` variable.
 
@@ -8,7 +8,7 @@ The current `base_url` will execute an HTTP GET to http://worldtimeapi.org/api/t
 
 `HTTP GET is Working!`
 
-## How do I get started?
+### How do I get started?
 
 With Ruby installed run the following:
 
@@ -16,14 +16,14 @@ With Ruby installed run the following:
 
 This command will execute the `run.sh` bash script to install the needed dependencies and run the Ruby script. Note, super user is required due to the installation of the required dependency, HTTPX. 
 
-## Need to install Ruby? 
+### How do I install Ruby? 
 
 Visit - https://www.ruby-lang.org/en/documentation/installation/
 
-## Can I customize the script call another URL? 
+### Can I customize the script call another URL? 
 
 Yes, change the `base_url` to run an HTTP GET request to the URL of your choice. Bonus: Visit https://www.worldtimeapi.org/pages/examples to learn more on how to change the `base_url` to reflect your timezone. 
 
-## Can I change the amount the script runs an HTTP GET request?
+### Can I change the amount the script runs an HTTP GET request?
 
 Yes, change the amount on the `repeatget` variable to the amount of your choice. 
